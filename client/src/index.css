@@ -43,15 +43,22 @@
 }
 
 :root {
-  --primary: var(--color-blue-700);
-  --primary-foreground: var(--color-blue-50);
-  --sidebar-primary: var(--color-blue-600);
-  --sidebar-primary-foreground: var(--color-blue-50);
-  --chart-1: var(--color-blue-300);
-  --chart-2: var(--color-blue-500);
-  --chart-3: var(--color-blue-600);
-  --chart-4: var(--color-blue-700);
-  --chart-5: var(--color-blue-800);
+  /* Brand Colors - Hello Business Cognitive Architecture */
+  --brand-primary: 168 82% 28%;        /* #089182 */
+  --brand-secondary: 262 83% 58%;      /* #7C3AED */
+  --brand-tertiary: 201 90% 23%;       /* #0C4A6E */
+  --brand-warm: 20 95% 53%;            /* #F97316 */
+  --brand-success: 162 94% 30%;        /* #059669 */
+  
+  --primary: hsl(var(--brand-primary));
+  --primary-foreground: oklch(0.985 0 0);
+  --sidebar-primary: hsl(var(--brand-primary));
+  --sidebar-primary-foreground: oklch(0.985 0 0);
+  --chart-1: hsl(var(--brand-primary));
+  --chart-2: hsl(var(--brand-secondary));
+  --chart-3: hsl(var(--brand-warm));
+  --chart-4: hsl(var(--brand-success));
+  --chart-5: hsl(var(--brand-tertiary));
   --radius: 0.65rem;
   --background: oklch(1 0 0);
   --foreground: oklch(0.235 0.015 65);
@@ -69,20 +76,20 @@
   --destructive-foreground: oklch(0.985 0 0);
   --border: oklch(0.92 0.004 286.32);
   --input: oklch(0.92 0.004 286.32);
-  --ring: oklch(0.623 0.214 259.815);
+  --ring: hsl(var(--brand-primary));
   --sidebar: oklch(0.985 0 0);
   --sidebar-foreground: oklch(0.235 0.015 65);
   --sidebar-accent: oklch(0.967 0.001 286.375);
   --sidebar-accent-foreground: oklch(0.141 0.005 285.823);
   --sidebar-border: oklch(0.92 0.004 286.32);
-  --sidebar-ring: oklch(0.623 0.214 259.815);
+  --sidebar-ring: hsl(var(--brand-primary));
 }
 
 .dark {
-  --primary: var(--color-blue-700);
-  --primary-foreground: var(--color-blue-50);
-  --sidebar-primary: var(--color-blue-500);
-  --sidebar-primary-foreground: var(--color-blue-50);
+  --primary: hsl(var(--brand-primary));
+  --primary-foreground: oklch(0.985 0 0);
+  --sidebar-primary: hsl(var(--brand-primary));
+  --sidebar-primary-foreground: oklch(0.985 0 0);
   --background: oklch(0.141 0.005 285.823);
   --foreground: oklch(0.85 0.005 65);
   --card: oklch(0.21 0.006 285.885);
@@ -99,18 +106,18 @@
   --destructive-foreground: oklch(0.985 0 0);
   --border: oklch(1 0 0 / 10%);
   --input: oklch(1 0 0 / 15%);
-  --ring: oklch(0.488 0.243 264.376);
-  --chart-1: var(--color-blue-300);
-  --chart-2: var(--color-blue-500);
-  --chart-3: var(--color-blue-600);
-  --chart-4: var(--color-blue-700);
-  --chart-5: var(--color-blue-800);
+  --ring: hsl(var(--brand-primary));
+  --chart-1: hsl(var(--brand-primary));
+  --chart-2: hsl(var(--brand-secondary));
+  --chart-3: hsl(var(--brand-warm));
+  --chart-4: hsl(var(--brand-success));
+  --chart-5: hsl(var(--brand-tertiary));
   --sidebar: oklch(0.21 0.006 285.885);
   --sidebar-foreground: oklch(0.85 0.005 65);
   --sidebar-accent: oklch(0.274 0.006 286.033);
   --sidebar-accent-foreground:  oklch(0.985 0 0);
   --sidebar-border: oklch(1 0 0 / 10%);
-  --sidebar-ring: oklch(0.488 0.243 264.376);
+  --sidebar-ring: hsl(var(--brand-primary));
 }
 
 @layer base {
